@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    
+    background: url('images/coverPhoto.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.regi{
+    color: white;
+}
+.regi:hover{
+    color: blue;
+}
+
+p, input, button{
+    font-size: 1em;
+}
+
+/* login and registor page */
+.forms{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.login, .register{
+    max-width: 330px;
+    width: 100%;
+    background: transparent;
+    border: 2px solid rgb(213, 213, 242);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgb(142, 133, 133);
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 25px;
+    margin: 0 10px;
+}
+
+/* Title */
+h2{
+    margin-bottom: 10px;
+}
+
+/* inputs */
+input[type="text"], input[type="password"]{
+    width: 100%;
+    height: 40px;
+    /* background: transparent;
+    border: 2px solid rgb(213, 213, 242);
+    border-radius: 40px; */
+    margin: 5px 0;
+    padding: 0 10px;
+    border: none;
+    border-radius: 40px;
+}
+
+/* Remember Me */
+.rem{
+    margin-top: 10px;
+    width: 100%;
+}
+
+/* LOgin & Register Buttons */
+button{
+    width: 100%;
+    padding: 10px 30px;
+    margin-top: 10px;
+    cursor: pointer;
+    border: none;
+    background-color: black;
+    color: white;
+    transition: all 0.3s ease-in;
+    border-radius: 40px;
+}
+
+button:hover{
+    background-color: white;
+    color: black;
+}
+
+/* Massage */
+.msg{
+    max-width: 300px;
+    width: 100%;
+    background-color: green;
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 40px;
+}
+
+/* profile page */
+.profile{
+    min-width: 200px;
+    padding: 20px;
+    background-color: rgb(100, 100, 236);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    max-width: 330px;
+    width: 100%;
+    background: transparent;
+    border: 2px solid rgb(213, 213, 242);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgb(142, 133, 133);
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    margin: 0 10px;
+}
+
+/* information */
+.profile .data{
+    width: 100%;
+    text-align: center;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 40px;
+}
+
+/* logout button */
+.profile a{
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    transition: all 0.3s ease-in;
+    border-radius: 40px;
+    width: 100%;
+}
+
+.profile a:hover{
+    background-color: white;
+    color: black;
+}
+
+/* Responsive */
+@media(max-width: 800px){
+    /* form */
+    .forms{
+        flex-direction: column;
+        align-items: center;
+    }
+    .login, .register{
+        margin: 20px 0;
+    }
+}
